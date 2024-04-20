@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    position: relative;
+    margin: 0; /* Added */
+    padding: 0; /* Added */
+}
+
+.options {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 18px; /* Standard font size for text */
+    display: flex; /* Use flexbox to arrange buttons */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+}
+
+.options button {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px; /* Standard padding for buttons */
+    font-size: 18px; /* Standard font size for text */
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px; /* Add spacing between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #002b4d;
+}
+
+
+
+.option-btn:hover {
+    background-color: #002b4d;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+#myVideo {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .options {
+        top: 70%; /* Adjusted position for mobile view */
+    }
+
+    .option-btn {
+        padding: 15px 30px; /* Adjusted button padding for mobile view */
+        font-size: 18px; /* Adjusted font size for mobile view */
+    }
+}
+
+.slide-container {
+    background-color: #001a2e; /* Background color for slide container */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    margin: 0; /* Added */
+    padding: 0; /* Added */
+}
+
+.slide-container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border: none; /* Remove border */
+    margin: 0; /* Remove margin */
+}
+
+/* Hide the scrollbar but allow scrolling */
+body {
+    overflow: auto; /* Enable scrolling */
+}
+
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit (Chrome, Safari, etc.) */
+}
+
+/* Optional: Hide scrollbar for Firefox */
+body {
+    scrollbar-width: none;
+}
+
+.emergecy{
+    size: 100%;
+}
+

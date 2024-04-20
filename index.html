@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMEPAD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div id="options" class="options hidden">
+            <button onclick="option1Clicked()">Pamintuan Mansion</button>
+            <button onclick="option2Clicked()">Holy Rosary Parish</button>
+        </div>
+        <video id="myVideo" autoplay muted playsinline onended="showOptions()">
+            <source src="Images/Render.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- Added slideContainer -->
+    <div id="slideContainer" class="slide-container hidden">
+        <img src="Images/Pamin.png" alt="Pamintuan">
+    </div>
+
+    <div id="slideContainer1" class="slide-container hidden">
+        <img src="Images/HRPC.png" alt="Holy Rosary Parish">
+    </div>
+
+    <div id="emergency" class="slide-container">
+        <img src="Images/123.jpg" alt="emergency">
+    </div>
+
+    <script src="script.js"></script> <!-- Moved script tag to the bottom -->
+</body>
+</html>
